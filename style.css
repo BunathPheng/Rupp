@@ -1,0 +1,186 @@
+:root {
+    --primary-color: #990000;
+    --secondary-color: #990000;
+    --light-gray: #f4f4f4;
+}
+
+body {
+    font-family: "Poppins", "Kantumruy Pro", sans-serif !important;
+    font-weight: 500 !important;
+    font-style: normal;
+    line-height: 1.6 ;
+    color: #333;
+}
+.bg-color {
+    background-color: var(--primary-color);
+    
+}
+.stickymain {
+    position: sticky !important;;
+    top: 0 !important;
+    z-index: 1030; /* Ensure it's above other elements */
+    
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+
+  .search-bar input {
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    margin-left: 10px;
+    color: white;
+  }
+
+  .search-bar input::placeholder { 
+    color: white;
+    
+  }
+
+  .search-bar svg {
+    width: 16px;
+    height: 16px;
+    color: white;
+  }
+.main-search  {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    
+}
+.cardmain {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(174, 174, 174, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.cardmain-image {
+    width:100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(139, 137, 137, 0.6);
+    color: white;
+    padding: 20px 20px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    z-index: 2;
+    
+}
+
+.cardmain:hover .card-content {
+    transform: translateY(0);
+}
+
+.cardmain h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.cardmain p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+.cardmain button {
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+    background-color: #f5f5f5;
+}
+
+.cardmain button a {
+    text-decoration: none;
+    color: rgb(23, 21, 21);
+}
+
+.cardmain button:hover {
+    background-color: var(--primary-color);
+}
+
+.cardmain button:hover a {
+    color: white;
+}
+.profile-card
+{
+    background-color: #f8f8f8;
+}
+.titlecard{
+    color: #1e3a8a;
+}
+/* footer */
+.footer {
+    background-color: #990000;
+    color: white;
+    padding: 30px 0;
+  }
+  .footer .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .footer .footer-links h4 {
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  .footer .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  .footer .footer-links ul li {
+    margin-bottom: 10px;
+  }
+  .footer .footer-links ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  .footer .footer-links ul li a:hover {
+    text-decoration: underline;
+  }
+  .footer .social-links {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .footer .social-links i {
+    margin-right: 8px;
+    font-size: 1.5rem;
+  }
+  .footer .social-icon {
+    margin-left: 5px;
+    color: white;
+    text-decoration: none;
+  }
+  .footer .social-icon:hover {
+    text-decoration: underline;
+  }
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .logo_footer {
+    max-width: 100px;
+    margin-bottom: 15px;
+  }
